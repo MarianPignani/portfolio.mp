@@ -1,0 +1,93 @@
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+
+    @include mobile {
+    }
+
+    .container {
+        width: 100%;
+        background-color: rgba(44, 44, 44);
+        display: grid;
+        height: 40px;
+        place-items: center;
+
+        .abrir {
+            display: none;
+
+            @include mobile {
+                display: block;
+                border: 0;
+                background-color: transparent;
+                cursor: pointer;
+            }
+        }
+
+        .menu {
+            @include mobile {
+                width: 22px;
+                transition: 0.7s;
+            }
+
+            &:hover {
+                transform: scale(1.06);
+                fill: rgb(204, 206, 206);
+            }
+        }
+
+        .visible {
+            @include mobile{
+                display: flex;
+                flex-direction: column;
+                background-color: rgba(44, 44, 44);
+                font-size: 20px;
+                bottom: 0;
+                top: 0;
+                left: 0;
+                right: 0;
+                gap: 30px;
+                position: absolute;
+                padding-top: 80px;
+                z-index: 10;
+            }
+        }
+
+        .barra {
+            list-style-type: none;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            
+            @include mobile {
+                display: none;
+            }
+
+            .item {
+                display: inline;
+                font-size: 15px;
+                padding: 6px 18px 6px 18px;
+                transition: 0.7s;
+
+                @include mobile {
+                    font-size: 22px;
+                }
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+
+                .list {
+                    text-decoration: none;
+                    color:  white;
+
+                    &:hover {
+                        color: rgb(91, 175, 224);
+                    }
+                }
+            }
+        }
+    }    
+}
+

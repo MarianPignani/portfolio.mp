@@ -1,0 +1,292 @@
+.main {
+    width: 100%;
+    background-color: white;
+
+    .mariano {
+        height: auto;
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: 300px 380px;
+        gap: 80px;
+        justify-content: center;
+        background-color: rgb(0, 0, 0);
+        padding-bottom: 50px;
+
+        @include medio {
+            grid-template-columns: none;
+            grid-template-rows: auto auto;
+            gap: 0px;
+        }
+
+        @include mobile {
+            
+        }
+
+        .foto {
+            width: 300px;
+            border-radius: 50%;
+            text-align: center;
+            box-shadow: 0 0 17px rgba(91, 175, 224, 0.651);
+            justify-self: center;
+            margin-top: 100px;
+
+            @include mobile {
+                width: 240px;
+                margin-top: 60px;
+                margin-bottom: 20px;
+
+            }
+        }
+
+        .carta {
+            margin-top: 50px;
+            margin-bottom: 50px;
+
+            .titulo {
+                font-size: 65px;
+                text-align: center;
+                color: rgb(255, 255, 255);
+
+                @include mobile {
+                    font-size: 50px;
+                }
+            }
+
+            .present {
+                font-size: 35px;
+                text-align: center;
+                color: rgb(91, 175, 224);
+                padding-top: 20px;
+
+                @include medio {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+
+                @include mobile {
+                    font-size: 28px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+            }
+
+            .bienvenida {
+                font-size: 28px;
+                text-align: center;
+                color:rgb(255, 255, 255);
+                padding-top: 15px;
+
+                @include medio {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+
+                @include mobile {
+                    font-size: 23px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+            }
+
+            .bott {
+                text-align: center;
+                justify-self: center;
+                padding-top: 28px;
+
+                .boton {
+                    width: 120px;
+                    height: 34px;
+                    text-align: center;
+                    color: rgb(0, 0, 0);
+                    font-size: 11px;
+                    font-weight: 600;
+                    background-color: rgb(91, 175, 224);
+                    border-radius: 14px;
+                    border-color: rgb(91, 175, 224);
+                    transition: 0.3s;
+                    box-shadow: 0 0 10px rgba(91, 175, 224, 0.651);
+
+                    &:hover {
+                        cursor: pointer;
+                        transform: scale(1.03);
+                        background-color: rgb(255, 255, 255);
+                        border-color: rgb(255, 255, 255);
+                        color: rgb(0, 0, 0);
+                        box-shadow: 0 0 10px rgba(91, 175, 224, 0.651);
+                    }
+
+                    
+                    @include mobile {
+                        width: 112px;
+
+                    }
+                }
+            }
+        }
+    }   
+
+    .skills {
+        height: auto;
+        background-color: rgb(36, 36, 36);
+        padding-bottom: 90px;
+
+        .tituS {
+            text-align: center;
+            padding-top: 70px;
+            font-size: 27px;
+            color: rgb(91, 175, 224);
+        }
+
+        .conocimientos {
+            height: auto;
+            display: flex;
+            padding-top: 70px;
+            justify-content: center;
+            gap: 45px;
+
+            @include medio {
+                gap: 18px;
+            }
+
+            @include mobile {
+                grid-template-columns: none;
+                display: grid;
+                grid-template-rows: auto auto auto auto auto auto auto;
+            }
+
+            .sk {
+                height: auto;
+                width: auto;
+                display: grid;
+                gap: 10px;
+
+                .imgSk {
+                    margin: auto;
+                    height: 35px;
+                    transition: 1.4s;
+
+                    &:hover {
+                        cursor: pointer;
+                        transform: rotate(1turn);
+                    }
+                }
+
+                .pSk {
+                    text-align: center;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .proyectos {
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        height: auto;
+        display: grid;
+
+        .contenedorP {
+            width: 100%;
+            padding-top: 70px;
+            margin-bottom: 80px;
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            grid-column-gap: 50px;
+            justify-content: center;
+
+            @include medio {
+                width: auto;
+                grid-template-columns: none;
+                grid-column-gap: none;
+                grid-template-rows: 200px 200px 200px;
+                grid-row-gap: 140px;
+                margin-bottom: 160px;
+            }
+
+            @include mobile {
+                width: auto;
+                grid-template-columns: none;
+                grid-column-gap: none;
+                grid-template-rows: 200px 200px 200px;
+                grid-row-gap: 140px;
+                margin-bottom: 160px;
+            }
+
+            .proyecto {
+                border-radius: 10px;
+                max-width: 100%;
+                height: auto;
+                height: 284px;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                box-shadow: 0 0 13px rgba(91, 175, 224, 0.651);
+
+                @include mobile {
+                }
+
+                &:hover .imgproyect {
+                    opacity: 0.5;
+                }
+
+                &:hover .textt {
+                    opacity: 1;  
+                }
+
+                .imgproyect {
+                    display: block;
+                    width: 200px;
+                    height: auto;
+                    border-radius: 10px;
+                    border: 2px solid rgb(91, 175, 224);
+                    cursor: pointer;
+                }
+
+                .textt {
+                    text-decoration: none;
+                    position: absolute;
+                    opacity: 0;
+                    font-size: 20px;
+                    color: rgb(255, 255, 255);
+                    top: 50%;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .sobreMi {
+        width: 100%;
+        height: auto;
+        background-color: rgb(36, 36, 36);
+        padding-bottom: 80px;
+        display: grid;
+        justify-content: center;
+
+        .titu {
+            text-align: center;
+            padding-top: 70px;
+            font-size: 27px;
+            color: rgb(91, 175, 224);
+        }
+
+        .parrafo {
+            text-align: center;
+            width: 700px;
+            padding-top: 50px;
+            font-size: 20px;
+            color: rgb(214, 212, 212);
+
+            @include medio {
+                width: 490px;
+            }
+
+            @include mobile {
+                width: auto;
+                font-size: 16px;
+                padding-left: 17px;
+                padding-right: 17px;
+            }
+        }
+    }
+}

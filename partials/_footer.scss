@@ -1,0 +1,33 @@
+.contact {
+    display: grid;
+    background-color: rgb(0, 0, 0);
+
+    .tituloC {
+        text-align: center;
+        padding-top: 45px;
+        font-size: 27px;
+        color: rgb(91, 175, 224);
+    }
+
+    .iconoss {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 45px;
+
+        .icoo {
+            width: 28px;
+            margin-left: 9px;
+            margin-right: 9px;
+            transition: 0.6s;
+
+            &:hover {
+            transform: scale(1.3);
+            }
+        }
+    }
+}
+
+
+
+
+
