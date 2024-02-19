@@ -37,23 +37,6 @@ header {
             }
         }
 
-        .visible {
-            @include mobile{
-                display: flex;
-                flex-direction: column;
-                background-color: rgba(44, 44, 44);
-                font-size: 20px;
-                bottom: 0;
-                top: 0;
-                left: 0;
-                right: 0;
-                gap: 30px;
-                position: absolute;
-                padding-top: 80px;
-                z-index: 10;
-            }
-        }
-
         .barra {
             list-style-type: none;
             text-align: center;
@@ -88,6 +71,32 @@ header {
                 }
             }
         }
+
+        .barra{
+            @include mobile{
+                display: flex;
+                flex-direction: column;
+                background-color: rgba(44, 44, 44);
+                font-size: 20px;
+                bottom: 0;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 100vh;
+                gap: 30px;
+                position: absolute;
+                padding-top: 80px;
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+
+        .visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+
     }    
 }
 

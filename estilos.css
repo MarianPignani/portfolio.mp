@@ -39,22 +39,6 @@ header .container .menu:hover {
   transform: scale(1.06);
   fill: rgb(204, 206, 206);
 }
-@media screen and (max-width: 576px) {
-  header .container .visible {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(44, 44, 44);
-    font-size: 20px;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    gap: 30px;
-    position: absolute;
-    padding-top: 80px;
-    z-index: 10;
-  }
-}
 header .container .barra {
   list-style-type: none;
   text-align: center;
@@ -86,6 +70,28 @@ header .container .barra .item .list {
 }
 header .container .barra .item .list:hover {
   color: rgb(91, 175, 224);
+}
+@media screen and (max-width: 576px) {
+  header .container .barra {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(44, 44, 44);
+    font-size: 20px;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    gap: 30px;
+    position: absolute;
+    padding-top: 80px;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+header .container .visible {
+  opacity: 1;
+  visibility: visible;
 }
 
 .main {
