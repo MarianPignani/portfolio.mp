@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
-  scroll-behavior: smooth;
 }
 
 header {
@@ -302,15 +301,14 @@ header .container .visible {
   border-radius: 10px;
   max-width: 100%;
   height: auto;
-  height: auto;
+  height: 284px;
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
   box-shadow: 0 0 13px rgba(91, 175, 224, 0.651);
 }
 .main .proyectos .contenedorP .proyecto:hover .imgproyect {
-  opacity: 0.3;
+  opacity: 0.5;
 }
 .main .proyectos .contenedorP .proyecto:hover .textt {
   opacity: 1;
@@ -321,41 +319,16 @@ header .container .visible {
   height: auto;
   border-radius: 10px;
   border: 2px solid rgb(91, 175, 224);
-}
-.main .proyectos .contenedorP .proyecto .textt {
-  position: absolute;
-  opacity: 0;
-}
-.main .proyectos .contenedorP .proyecto .textt .tituProyect {
-  text-align: center;
-  color: white;
-  font-weight: bold;
-  margin-bottom: 15px;
-  font-size: 21px;
-}
-.main .proyectos .contenedorP .proyecto .textt .pProyect {
-  text-align: center;
-  color: white;
-  font-size: 17px;
-  margin-bottom: 10px;
-  margin-left: 7px;
-  margin-right: 7px;
-}
-.main .proyectos .contenedorP .proyecto .textt .divProyect {
-  text-align: center;
-}
-.main .proyectos .contenedorP .proyecto .textt .divProyect .anch {
-  width: auto;
-}
-.main .proyectos .contenedorP .proyecto .textt .divProyect .ic {
-  width: 25px;
-  margin-left: 3px;
-  margin-right: 3px;
-  transition: 0.6s;
   cursor: pointer;
 }
-.main .proyectos .contenedorP .proyecto .textt .divProyect .ic:hover {
-  transform: scale(1.2);
+.main .proyectos .contenedorP .proyecto .textt {
+  text-decoration: none;
+  position: absolute;
+  opacity: 0;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  top: 50%;
+  font-weight: bold;
 }
 .main .sobreMi {
   width: 100%;
@@ -390,9 +363,6 @@ header .container .visible {
     padding-left: 17px;
     padding-right: 17px;
   }
-}
-.main .sobreMi .parrafo .negrita {
-  color: rgb(137, 189, 219);
 }
 
 .contact {
