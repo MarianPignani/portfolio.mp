@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
     <link rel="icon" type="image/png" href="./img/eme.ico">
     <title>Mariano Pignani</title>
@@ -66,30 +67,39 @@
                 </div>
             </div>
             <div class="contE">
-                <div class="contUno">
-                    <h3 class="h3uno">Desarrollo Frontend</h3>
-                    <small class="pUno">(HTML, CSS, Javascript, React JS, Bootstrap, Git, SCSS)</small>
-                    <p class="coder">CODERHOUSE<br>- Nov 2023 - Mar 2024 -</p>
-                    
-                </div>
-                <div class="contDos">
-                    <h3 class="h3dos">Full Stack Python</h3>
-                    <small class="pDos">(HTML, CSS, Javascript, Bootstrap, Git, MySQL, Python, Django)</small>
-                    <p class="cac">CODO A CODO<br>- Feb 2024 - En progreso -</p>
-                </div>
+                <div class="rows">
+                    <div data-aos="fade-right" class="row-left">
+                        <div class="row">
+                            <h3 class="title-row">Desarrollo Frontend</h3>
+                            <div>
+                                <p class="p-row">(HTML, CSS, Javascript, React JS, Bootstrap, Git, SCSS).</p>
+                                <p class="p-p">CODERHOUSE (Nov 2023 - Abr 2024).</p>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div data-aos="fade-left" class="row-right">
+                        <div class="row">
+                            <h3 class="title-row">Full Stack Python</h3>
+                            <div>
+                                <p class="p-row">(HTML, CSS, Javascript, Bootstrap, Git, MySQL, Python, Django).</p>
+                                <p class="p-p">CODO A CODO (Feb 2024 - En progreso).</p>
+                            </div>
+                        </div>
+                    </div>
             </div>
         </div>
         <div class="proyectos" id="proyectos">
             <h1 class="tituP">Proyectos</h1>
-            <div class="contenedorP">
+            <div data-aos="zoom-in-up" class="contenedorP">
                 <div class="proyecto uno">
-                    <img class="imgproyect" src="./img/bonnysb.png" alt="proyecto bonnys">
+                    <img class="imgproyect" src="./img/datafetch.jpeg" alt="proyecto datafetch">
                     <div class="textt">
-                        <h3 class="tituProyect">Bonny's Burger</h3>
-                        <p class="pProyect">Sitio web desarrollado para hamburguesería de la ciudad de Rosario. <br></p>
+                        <h3 class="tituProyect">DataFetch</h3>
+                        <p class="pProyect">Sitio web desarrollado para empresa de la ciudad de Valencia. <br></p>
                         <div class="divProyect">
-                            <a href="https://github.com/MarianPignani/bonnys-burgers" target="_blank"><img src="./img/github.png" alt="github" class="ic"></a>
-                            <a href="http://marianpignani.github.io/bonnys-burgers/" target="_blank"><img src="./img/web.png" alt="sitio web" class="ic"></a>
+                            <a href="https://github.com/MarianPignani/datafetch" target="_blank"><img src="./img/github.png" alt="github" class="ic"></a>
+                            <a href="https://www.data-fetch.com/" target="_blank"><img src="./img/web.png" alt="sitio web" class="ic"></a>
                         </div>
                     </div>
                 </div>
@@ -119,10 +129,8 @@
          
         <div class="sobreMi" id="sobreMi">
             <h1 class="titu">Sobre Mí</h1>
-            <p class="parrafo">Vengo de una familia de abogados, naturalmente terminé estudiando derecho.
-                A poco de finalizar la carrera, empecé un emprendimiento textil que rápidamente se convirtió en una empresa, motivo por el cual dejé la carrera, dado que el trabajo me demandaba muchísimo tiempo.<br><br>
-                Con la llegada de la Pandemia, me ví obligado a volcar el trabajo a lo digital. En ese momento se despierta mi <b class="negrita">curiosidad e interés</b> en el mundo la programación.<br><br>
-                Hoy esa empresa pasó a ser parte de mi historia y me encuentro en la búsqueda de <b class="negrita">formarme</b> como programador, por lo que continúo aprendiendo y mejorando mis habilidades constantemente.<br><br>
+            <p class="parrafo">Con la llegada de la Pandemia me ví obligado a volcar el trabajo a lo digital. En ese momento se despierta mi <b class="negrita">curiosidad e interés</b> en el mundo la programación.<br><br>
+                Hoy me encuentro en la búsqueda de <b class="negrita">formarme</b> como programador, por lo que continúo aprendiendo y mejorando mis habilidades constantemente.<br><br>
                 Como desarrollador Frontend, estoy comprometido con la accesibilidad, la eficiencia y el detalle en todo lo que hago. Soy fiel creyente de que el <b class="negrita">trabajo en equipo</b> es fundamental para obtener un aprendizaje de calidad y una mejora continua.
             </p>
         </div>
@@ -133,7 +141,7 @@
             <div class="iconoss">
                 <a href="mailto:marianogpignani@gmail.com" target="_blank"><img class="icoo" src="./img/mail.png" alt="email"></a>
                 <a href="https://www.linkedin.com/in/marianoginopignani/" target="_blank"><img class="icoo" src="./img/linkedin.png" alt="linkedin"></a>
-                <a href="https://w.app/os4IKT" target="_blank"><img class="icoo" src="./img/whatsapp.png" alt="whatsapp"></a>
+                <a href="https://wa.me/543413702720?text=" target="_blank"><img class="icoo" src="./img/whatsapp.png" alt="whatsapp"></a>
                 <a href="https://github.com/MarianPignani" target="_blank"><img class="icoo" src="./img/github.png" alt="github"></a>
             </div>
             <div class="copy">
@@ -141,5 +149,11 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1000
+            });
+        </script>
     <script src="./js/header.js"></script>
 </body>

@@ -267,52 +267,81 @@ header .container .visible {
 }
 .main .skills .contE {
   width: 100%;
-  height: 250px;
+  height: auto;
   margin-top: 90px;
-  margin-bottom: 10px;
+  margin-bottom: 90px;
   display: grid;
-  grid-template-columns: 240px 240px;
-  grid-column-gap: 0;
   justify-content: center;
+  align-items: center;
   background-color: rgb(36, 36, 36);
 }
-.main .skills .contE .contUno {
+.main .skills .contE .rows {
+  width: 700px;
+  height: auto;
+  display: grid;
+  grid-template-rows: 100px 100px;
+  gap: 55px;
   justify-content: center;
-  text-align: center;
-  padding-right: 20px;
-  border-right: 1.5px solid rgb(91, 175, 224);
 }
-.main .skills .contE .contUno .h3uno {
-  color: rgb(214, 212, 212);
-  padding-top: 20px;
+@media screen and (max-width: 576px) {
+  .main .skills .contE .rows {
+    width: 340px;
+    height: auto;
+  }
 }
-.main .skills .contE .contUno .pUno {
-  color: rgb(214, 212, 212);
-  padding-top: 10px;
+.main .skills .contE .row-left {
+  width: 650px;
+  display: grid;
+  justify-content: start;
 }
-.main .skills .contE .contUno .coder {
-  color: rgb(214, 212, 212);
-  padding-top: 8px;
-  font-size: 13px;
+@media screen and (max-width: 576px) {
+  .main .skills .contE .row-left {
+    width: 340px;
+  }
 }
-.main .skills .contE .contDos {
-  justify-content: center;
-  text-align: center;
+.main .skills .contE .row-right {
+  width: 650px;
+  display: grid;
+  justify-content: end;
+}
+@media screen and (max-width: 576px) {
+  .main .skills .contE .row-right {
+    width: 340px;
+  }
+}
+.main .skills .contE .row {
+  display: flex;
+  align-items: center;
+  width: 500px;
   padding-left: 20px;
-  border-left: 1.5px solid rgb(91, 175, 224);
+  padding-right: 20px;
+  background-image: linear-gradient(to left, rgb(36, 36, 36), rgba(91, 175, 224, 0.377), rgb(36, 36, 36));
+  transition: 0.7s;
 }
-.main .skills .contE .contDos .h3dos {
-  color: rgb(214, 212, 212);
-  padding-top: 115px;
+@media screen and (max-width: 576px) {
+  .main .skills .contE .row {
+    width: 340px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
-.main .skills .contE .contDos .pDos {
-  color: rgb(214, 212, 212);
-  padding-top: 10px;
+.main .skills .contE .row:hover {
+  transform: scale(1.03);
 }
-.main .skills .contE .contDos .cac {
-  color: rgb(214, 212, 212);
+.main .skills .contE .title-row {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 480;
+}
+.main .skills .contE .p-row {
+  color: rgb(255, 255, 255);
+  padding-left: 22px;
+}
+.main .skills .contE .p-p {
+  color: white;
+  padding-left: 22px;
   padding-top: 8px;
-  font-size: 13px;
 }
 .main .proyectos {
   background-color: rgb(0, 0, 0);
@@ -330,7 +359,7 @@ header .container .visible {
   width: 100%;
   height: auto;
   padding-top: 70px;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
   display: grid;
   grid-template-columns: 200px 200px 200px;
   grid-column-gap: 50px;
@@ -421,7 +450,7 @@ header .container .visible {
   width: 100%;
   height: auto;
   background-color: rgb(36, 36, 36);
-  padding-bottom: 80px;
+  padding-bottom: 20px;
   display: grid;
   justify-content: center;
 }
